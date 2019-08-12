@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-"""Setup module for airqdata."""
+"""Setup module for air-quality."""
 
 import os
 from setuptools import find_packages, setup
 
-from airqdata import __version__ as version
+from airquality import __version__ as version
 
 # Get short and long descriptions from readme file
 here = os.path.abspath(os.path.dirname(__file__))
@@ -17,16 +17,16 @@ title, short_description, rest = long_description.split(2 * os.linesep,
                                                         maxsplit=2)
 short_description = " ".join(short_description.split())
 
-setup(name="airqdata",
+setup(name="airquality",
       version=version,
       description=short_description,
       long_description=long_description,
       long_description_content_type="text/markdown",
-      url="https://github.com/dr-1/airqdata",
-      author="Dominik Rubo",
+      url="https://github.com/lordsoffallen/airquality",
+      author="Fazil Topal",
       license="GNU GPLv3",
       classifiers=[
-          "Development Status :: 3 - Alpha",
+          "Development Status :: Alpha",
           "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
           "Operating System :: OS Independent",
           "Programming Language :: Python :: 3",
